@@ -1,0 +1,43 @@
+Postman Tool
+Postman → API testing tool, send requests, see responses.
+
+Key parts:
+
+Request tab → choose method (GET/POST/etc.), enter URL.
+
+Headers → e.g. Content-Type: application/json.
+
+Body → JSON data for POST/PUT/PATCH.
+
+Collections → save grouped requests.
+
+Environment variables → store base URL, tokens.
+
+Tests → small JS scripts to check response.
+
+HTTP Methods 
+GET → read data. Example: /students → list all students.
+
+POST → create new data. Example: add student with JSON body.
+
+PUT → update/replace full record. Example: change all details of student 101.
+
+PATCH → update part of record. Example: only update student’s email.
+
+DELETE → remove data. Example: delete student 101.
+
+Example
+URL: http://localhost:8080/students
+
+Method: POST
+
+Headers: Content-Type: application/json
+
+Body:
+
+json
+{
+  "id": 101,
+  "name": "Swetha"
+}
+Click Send → response shows success/failure.

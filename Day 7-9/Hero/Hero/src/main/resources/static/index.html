@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hero Management</title>
+</head>
+<body>
+<h1>Hero Management</h1>
+<label>Hero Name:</label>
+<input type="text" id="name">
+<label>Hero Power:</label>
+<input type="text" id="power">
+<button onclick="addHero()">Add Hero</button>
+<button onclick="getHeroes()">Show Heroes</button>
+<h3>Result:</h3>
+<div id="result"></div>
+<script>
+    async function addHero() {
+        const hero = {
+            name: document.getElementById("name").value,
+            power: document.getElementById("power").value
+        };
+        const response = await fetch("http://localhost:8080/heroes", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(hero)
+        });
+        const data = await response.json();
+        document.getElementById("result").innerText =
+            `Added: ${data.name} - ${data.power}`;
+    }
+    async function getHeroes() {
+        const response = await fetch("http://localhost:8080/heroes");
+        const heroes = await response.json();
+        let output = "";
+        heroes.forEach(hero => {
+            output += `<p>Name: ${hero.name} | Power: ${hero.power}</p>`;
+        });
+        document.getElementById("result").innerHTML = output;
+    }
+</script>
+</body>
+</html>

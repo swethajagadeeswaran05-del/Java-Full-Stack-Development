@@ -1,0 +1,39 @@
+<html>
+    <body>
+        <h1> Variable Scope in JavaScript</h1>
+            <script>
+                var a=200;
+                console.log(a);
+                var a=300;
+                console.log(a);
+                a=400;
+                console.log(a);
+
+                let b=100;
+                console.log(b);
+                // let b=200; // This will throw an error because 'b' has already been declared
+                b=300; // This is allowed because we are not redeclaring 'b',
+                console.log(b);
+                const c=50;
+                console.log(c);
+                // c=100; // This will throw an error because 'c' is a constant and cannot be reassigned or redeclared
+                if(true){
+                    let aa=10;
+                    var bb=20;
+                    const cc=30;
+                }
+                //console.log(aa); // This will throw an error because 'aa' is block-scoped and not accessible outside the if block
+                console.log(bb); // This will work because 'bb' is function-scoped and accessible outside the if block
+              //console.log(cc); // This will throw an error because 'cc' is block-scoped and not accessible outside the if block
+
+
+              
+              let d=[1,2,3,4,4,5,6,7,8,9];// here we access the elements of the array using the index and also we can use loop to access all the elements of the array
+              console.log(d);// this will print the entire array
+              console.log(d[0]);// this will print the first element of the array
+              for(let i=0;i<d.length;i++){// this will print all the elements of the array using a loop
+                console.log(d[i]);
+              }
+            </script>
+    </body>
+</html>

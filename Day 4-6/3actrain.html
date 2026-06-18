@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <input type="number" id="num1" placeholder="Enter seat number">
+    <input type="text" id="coachClass" placeholder="Enter class (2ac or 3ac)">
+    <button onclick="train()">Train</button>
+
+    <h2 id="res"></h2>
+
+    <script>
+        function train() {
+            let seatno = parseInt(document.getElementById("num1").value);
+            let clas = document.getElementById("coachClass").value.toLowerCase();
+
+            if (clas === "3ac") {
+
+                if (seatno >= 1 && seatno <= 80) {
+
+                    let rem = seatno % 8;
+
+                    if (rem == 1 || rem == 4) {
+                        document.getElementById("res").textContent = "LOWER BERTH";
+                    }
+                    else if (rem == 2 || rem == 5) {
+                        document.getElementById("res").textContent = "MIDDLE BERTH";
+                    }
+                    else if (rem == 3 || rem == 6) {
+                        document.getElementById("res").textContent = "UPPER BERTH";
+                    }
+                    else if (rem == 7) {
+                        document.getElementById("res").textContent = "SIDE LOWER BERTH";
+                    }
+                    else if (rem == 0) {
+                        document.getElementById("res").textContent = "SIDE UPPER BERTH";
+                    }
+
+                } else {
+                    document.getElementById("res").textContent = "Invalid Seat Number for 3AC";
+                }
+
+            } 
+            else if (clas === "2ac") {
+
+                if (seatno >= 1 && seatno <= 60) {
+
+                    let rem = seatno % 6;
+
+                    if (rem == 1 || rem == 3) {
+                        document.getElementById("res").textContent = "LOWER BERTH";
+                    }
+                    else if (rem == 2 || rem == 4) {
+                        document.getElementById("res").textContent = "UPPER BERTH";
+                    }
+                    else if (rem == 5) {
+                        document.getElementById("res").textContent = "SIDE LOWER BERTH";
+                    }
+                    else if (rem == 0) {
+                        document.getElementById("res").textContent = "SIDE UPPER BERTH";
+                    }
+
+                } else {
+                    document.getElementById("res").textContent = "Invalid Seat Number for 2AC";
+                }
+
+            } 
+            else {
+                document.getElementById("res").textContent = "Invalid Class! Enter 2ac or 3ac";
+            }
+        }
+    </script>
+</body>
+</html>

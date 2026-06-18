@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee Shop</title>
+</head>
+<body>
+<form id="coffeeForm">
+    Type: <input id="type" required>
+    <button type="submit">Place Order</button>
+</form>
+<h2>🍵 Coffee Order List</h2>
+<ul id="orderlist"></ul>
+<script>
+    const form = document.getElementById("coffeeForm");
+    const list = document.getElementById("orderlist");
+    // Load existing orders when page opens
+    fetch("/coffee")
+        .then(res => res.json())
+        .then(data => {
+            data.forEach(order => addCoffee(order));
+        });
+    // Handle form submission
+    form.addEventListener("submit", e => {
+        e.preventDefault();
+        const type = document.getElementById("type").value;
+        fetch("/coffee/" + encodeURIComponent(type), {
+            method: "POST"
+        })
+            .then(res => res.text())
+            .then(message => {
+                console.log(message);
+                // Display new order immediately
+                addCoffee(type);
+                form.reset();
+            })
+            .catch(error => console.error(error));
+    });
+    // Add order to list
+    function addCoffee(order) {
+        const li = document.createElement("li");
+        li.textContent = order;
+        list.appendChild(li);
+    }
+</script>
+</body>
+</html>
