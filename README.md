@@ -116,3 +116,92 @@ Used Fetch API for data retrieval
 Processed API responses with .then()
 Handled form submission with preventDefault()
 <img width="945" height="367" alt="image" src="https://github.com/user-attachments/assets/7fc5fd19-2be0-4107-a8c9-42d65ef52b94" />
+**Day 10
+Tasks Completed:**
+Learned about Interfaces in Java and their role in abstraction.
+Explored the Repository Layer and how it interacts with the database.
+Practiced with H2 in‑memory database for quick testing.
+Discussed JPA (Java Persistence API) and Entity classes for ORM mapping.
+**Code Practice:**
+Implemented a StudentRepository class with findAll() and save() methods.
+Created StudentController and Student entity to demonstrate CRUD operations.
+**Highlights:**
+Understood how repositories abstract database operations.
+Practiced SQL commands in H2 console (CREATE, INSERT, SELECT, UPDATE, DELETE).
+<img width="875" height="307" alt="image" src="https://github.com/user-attachments/assets/b52414ae-1355-4a79-8d6d-8864e8aa3d0e" />
+<img width="339" height="222" alt="image" src="https://github.com/user-attachments/assets/746b7cd8-6c24-4c60-bbd7-a87f1bed0792" />
+<img width="434" height="292" alt="image" src="https://github.com/user-attachments/assets/a94877df-3f7f-4a4d-842b-bb89c069c6ca" />
+<img width="428" height="295" alt="image" src="https://github.com/user-attachments/assets/b4fd6a48-82f9-42dd-ae7b-e53433a03bdb" />
+**Day 11
+Topics Covered:**
+Learned about foreign key annotations in JPA for relational mapping.
+Connected Spring Boot with PostgreSQL database.
+Configured application.properties with datasource URL, username, password, and Hibernate dialect.
+**Highlights:**
+Established one‑to‑many and many‑to‑one relationships using foreign keys.
+Verified database schema updates using spring.jpa.hibernate.ddl-auto=update.
+Practiced queries in PostgreSQL to test entity relationships.
+<img width="866" height="202" alt="image" src="https://github.com/user-attachments/assets/0c48a265-2871-4c9c-ae54-12e068afb651" />
+<img width="394" height="340" alt="image" src="https://github.com/user-attachments/assets/46ce68fd-26ad-4662-a110-411a32d6e49e" />
+<img width="466" height="342" alt="image" src="https://github.com/user-attachments/assets/ee6f33fe-5429-4d69-8ec1-da391aa1e603" />
+<img width="872" height="349" alt="image" src="https://github.com/user-attachments/assets/c5c1d092-d027-4007-89a6-7129d193d6a0" />
+**Day 12
+Topics Covered:**
+Introduction to React.js for frontend development.
+Created a Student entity with Lombok annotations (@Data) for auto‑generated getters/setters.
+Built a StudentService class with save() and findAll() methods.
+**Highlights:**
+Learned how React integrates with backend APIs.
+Practiced creating components and connecting them with Spring Boot services.
+Understood how Lombok reduces boilerplate code in Java.
+<img width="442" height="334" alt="image" src="https://github.com/user-attachments/assets/41a2d9a5-87e7-415c-ab87-99e9bbdc7926" />
+<img width="424" height="333" alt="image" src="https://github.com/user-attachments/assets/bf18a717-7dfa-4fdd-b5e6-320bb7552a32" />
+<img width="420" height="258" alt="image" src="https://github.com/user-attachments/assets/d3d72079-c4fe-4e8f-bba1-953eb93bf087" />
+<img width="449" height="255" alt="image" src="https://github.com/user-attachments/assets/67c2bddc-f1bb-4817-ae32-049d185ff7c1" />
+**Day 13
+Topics Covered:**
+React Components: Props and States.
+Implemented dynamic rendering using props (e.g., displaying different names and ages).
+Practiced event handling in React (button clicks, messages).
+**Highlights:**
+Differentiated between props (immutable data) and state (mutable data).
+Built interactive UI components with event listeners.
+<img width="449" height="297" alt="image" src="https://github.com/user-attachments/assets/3ca533b2-4e35-4217-b1e8-ca0af55a427e" />
+**Day 14
+Topics Covered:**
+Callback functions in React and their role in passing data between components.
+Explored types of hooks (useState, useEffect).
+Built an auto‑counter app that updates every 2 seconds using hooks.
+**Highlights:**
+Learned how hooks simplify state management.
+Implemented real‑time updates with useEffect.
+<img width="406" height="325" alt="image" src="https://github.com/user-attachments/assets/cdd6db71-7bac-4485-a26b-3cb47c318472" />
+<img width="434" height="324" alt="image" src="https://github.com/user-attachments/assets/df74980d-5337-44c9-8ebd-272eea81a8e9" />
+<img width="361" height="160" alt="image" src="https://github.com/user-attachments/assets/25ef1fd3-4515-4b48-a0de-126002dff212" />
+<img width="440" height="65" alt="image" src="https://github.com/user-attachments/assets/2c56bb99-44d3-4613-bc81-d4655544c6d2" />
+<img width="376" height="100" alt="image" src="https://github.com/user-attachments/assets/4d2f90d2-7351-4490-b5d4-f87d25128de0" />
+<img width="493" height="75" alt="image" src="https://github.com/user-attachments/assets/7d06d5d5-bf98-413e-8391-9199d86eb7bf" />
+**Day 15
+Topics Covered:**
+Created a Login Page in React.
+Implemented form handling with username and password fields.
+Displayed login success message upon validation.
+**Highlights:**
+Practiced controlled components in React forms.
+Connected frontend login form with backend validation logic.
+<img width="759" height="352" alt="image" src="https://github.com/user-attachments/assets/5579b55d-e365-49b6-9088-2f004b772ef0" />
+<img width="759" height="192" alt="image" src="https://github.com/user-attachments/assets/a3afcbe9-35b7-4808-a877-e77ad647da06" />
+<img width="759" height="165" alt="image" src="https://github.com/user-attachments/assets/2fc57b7b-26fa-489d-8591-398824a03e34" />
+<img width="754" height="169" alt="image" src="https://github.com/user-attachments/assets/4bd17266-48aa-4b20-885a-11755599763d" />
+**Day 16
+Topics Covered:**
+Established connection between frontend and backend.
+Built a React frontend page that communicates with Spring Boot backend.
+Displayed backend responses (e.g., “Login successful”) on the frontend.
+Generated tables dynamically from backend data.
+**Highlights:**
+Understood full stack flow: React frontend → Spring Boot backend → Database.
+Practiced API calls from React using Fetch
+Verified data exchange between frontend and backend.
+<img width="351" height="229" alt="image" src="https://github.com/user-attachments/assets/378ea886-8efd-43e9-87e1-026e7fce423c" />
+<img width="501" height="230" alt="image" src="https://github.com/user-attachments/assets/4c9f91b0-0c8d-425b-96f7-8c0fb3acab26" />
