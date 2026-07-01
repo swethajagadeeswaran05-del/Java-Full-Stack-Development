@@ -205,3 +205,100 @@ Practiced API calls from React using Fetch
 Verified data exchange between frontend and backend.
 <img width="351" height="229" alt="image" src="https://github.com/user-attachments/assets/378ea886-8efd-43e9-87e1-026e7fce423c" />
 <img width="501" height="230" alt="image" src="https://github.com/user-attachments/assets/4c9f91b0-0c8d-425b-96f7-8c0fb3acab26" />
+**Day 17**
+This project was developed as part of Java Full Stack Development Placement Training to understand the implementation of CRUD (Create, Read, Update, Delete) operations using Spring Boot, Spring Data JPA, and PostgreSQL.
+The application follows a layered architecture consisting of:
+Controller Layer
+Service Layer
+Repository Layer
+Database Layer
+The project demonstrates how Spring Boot applications interact with databases using JPA repositories and REST APIs.
+Technologies Used
+Backend
+Java
+Spring Boot
+Spring Data JPA
+Hibernate
+PostgreSQL
+Maven
+API Testing
+Postman
+Project Architecture
+Client
+
+↓
+
+REST API Endpoints
+
+↓
+
+Controller Layer
+
+↓
+
+Service Layer
+
+↓
+
+Repository Layer
+
+↓
+
+PostgreSQL Database
+
+Concepts Covered
+Spring Boot
+Spring Boot Project Setup
+Dependency Management
+Application Configuration
+REST API Development
+Spring Data JPA
+JpaRepository Interface
+Database Operations
+Entity Management
+Automatic Query Generation
+PostgreSQL
+Database Connectivity
+Table Creation
+Data Persistence
+REST APIs
+GET Request
+POST Request
+PUT Request
+DELETE Request
+Layered Architecture
+Controller Layer
+Service Layer
+Repository Layer
+Entity Layer
+**Day 18**
+This project was developed as part of Java Full Stack Development Placement Training to understand how a real-world e-commerce application is built using React.js.
+The application demonstrates:
+User Authentication
+Product Listing
+Product Management
+Shopping Cart Functionality
+Payment Module
+State Management using React Hooks
+Component-Based Architecture
+Dynamic User Interaction
+The project simulates an online shopping platform where users can log in, browse products, add products to a cart, and proceed to payment.
+**Day 19**
+Topics Covered
+Introduction to High-Level Design (HLD)
+Introduction to Low-Level Design (LLD)
+OOP Concepts Revision
+Real-world examples of OOP implementation
+**Day 20 **
+Topics Covered
+Principles of Low-Level Design
+SOLID Principles
+Real-world examples and implementations
+**Day 21 **
+Topics Covered
+Revision of SOLID Principles
+Categories of Design Patterns
+Creational Design Patterns
+Factory Method Pattern
+Abstract Factory Pattern
+Singleton Pattern
