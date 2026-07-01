@@ -1,0 +1,21 @@
+class PartyManager {
+
+    void playMusic() {
+	 System.out.println("Playing music..."); 
+	}
+}
+
+class PartyCook {
+    void cookFood() { 
+	System.out.println("Cooking food..."); 
+	}
+}
+
+class PartyServer {
+    void serveDrinks() { 
+	System.out.println("Serving drinks..."); 
+	}
+}
+
+==============================================================
+
